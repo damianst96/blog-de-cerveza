@@ -1,0 +1,289 @@
+:root {
+    --primario: #F28E1C;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Globales */
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Eurostile', sans-serif;
+}
+
+p {
+    font-family: 'Eurostile';
+    font-style: italic;
+}
+
+h1 {
+    font-size: 4.8rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 2.8rem;
+    margin-top: 0;
+}
+
+h4 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h5 {
+    font-size: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -----HEADER----- */
+
+.header {
+    background-image: url(../img/cerveza.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+.header__texto {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.eslogan {
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 4rem;
+    color: white;
+}
+
+.navegacion {
+    font-weight: bold;
+}
+
+.navegacion__enlace {
+    color: var(--primario);
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+/* -----MEDIA QUERIES----- */
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+    }
+
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: 1%;
+        column-gap: 5%;
+    }
+
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 3rem;
+    }
+
+    .header__texto--titulo {
+        font-size: 2rem;
+    }
+
+    .eslogan {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .contenido-principal {
+        margin-top: 2%;
+    }
+
+    .articulo:last-of-type {
+        border-bottom: none;
+        padding-bottom: 5%;
+    }
+
+    .articulo__titulo2 {
+        font-size: 2.8rem;
+    }
+
+    .sobre-nosotros__imagen {
+        width: 100%;
+    }
+
+    .titulo--nosotros {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .campo__field {
+        width: 100%;
+    }
+}
+
+/* -----ARTÍCULO BLOG----- */
+
+.articulo {
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid var(--primario);
+}
+
+.articulo:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.contenido-principal {
+    margin-top: 1%;
+}
+
+.articulo__titulo {
+    font-size: 2.5rem;
+    margin-top: 2%;
+}
+
+.articulo__descripcion {
+    font-size: 1.8rem;
+}
+
+.articulo-contenido {
+    line-height: 1.2;
+}
+
+.leer-articulo {
+    color: var(--primario);
+    font-size: 1.8rem;
+}
+
+.leer-articulo:hover {
+    background-color: rgb(0 0 0 / 70%);
+}
+
+/* -----REUNIONES----- */
+
+.sidebar__reunion {
+    border-top: 1px solid var(--primario);
+    margin-top: 3%;
+}
+
+.sidebar__reunion:last-of-type {
+    margin-bottom: 3%;
+}
+
+.sidebar__reunion--titulo {
+    margin-top: 3%;
+}
+
+/* -----REUNIONES----- */
+
+.footer {
+    background-color: black;
+    padding: 1% 0 1% 0;
+    text-align: center;
+}
+
+.reuniones__titulo {
+    margin-top: 2%;
+}
+
+.divisor {
+    border: 1px solid var(--primario);
+}
+
+/* -----NOSOTROS----- */
+
+.titulo--nosotros {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.sobre-nosotros {
+    margin-bottom: 2%;
+}
+
+/* -----CONTACTO----- */
+
+.contacto-bg {
+    background-image: url(../img/contacto-cerveza.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: white;
+    margin: -10rem auto 0 auto;
+    width: 95%;
+    padding: 2%;
+    border: 3px solid var(--primario);
+}
+
+.campo {
+    display: grid;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.campo__field {
+    width: 25%;
+}
+
+.campo__field--textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+.campo__enviar {
+    width: 25%;
+}
