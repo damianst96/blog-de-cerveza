@@ -19,6 +19,10 @@ Proyecto de blog cervecero con HTML y CSS. Completamente creado por Damián Stri
 
 ***Footer***: allí figuran enlaces a cada una de las categorías al igual que el header. El footer aparece en cada una de las secciones.
 
+![Página Principal 2](img/blog-de-cerveza__pag-principal2.png)
+
+![Página Principal 3](img/blog-de-cerveza__pag-principal3.png)
+
 # Cómo ver el código de la página
 - Descargar y descomprimir el archivo ZIP.
 - Arrastrar la carpeta a Visual Studio Code o editor de preferencia.
