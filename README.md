@@ -5,6 +5,8 @@ Proyecto de blog cervecero con HTML y CSS. Completamente creado por Damián Stri
 >
 > Completamente responsive, se adapta a cualquier dispositivo.
 
+![Página Principal](img/blog-de-cerveza__pag-principal.png)
+
 ***Header***: todos los enlaces a todas las secciones (Nosotros, Reuniones y Contacto) con una foto de fondo. El logotipo funciona como botón hacia el menú principal. Este header aparece en cada una de las secciones de la página web.
 
 ***Página Principal***: al entrar a la página lo primero que aparece son artículos de blog del lado izquierdo y del derecho las próximas reuniones cerveceras.
